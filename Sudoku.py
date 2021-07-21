@@ -117,7 +117,7 @@ def solvePuzzleMinimum(sodukoArray):
     minCol = -1
 
     isSolvable = True
-    #gets the square with highest degree heuristic and checks for unsolvable squares
+    #gets the square with lowest degree heuristic and checks for unsolvable squares
     for r in range(0, 9):
       for c in range(0, 9):
         if (numMoveArray[r][c] == 0 and currentBoard[r][c] == 0):#unsolvable
